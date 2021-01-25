@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="myPurple">#9B59B6</color>
+    <color name="grey_light">#D3D3D3</color>
+    <color name="grey_dark">#4A4A4A</color>
+
+    <color name="qw">#00000000</color>
+    <color name="black_light">#2B2B2B</color>
 </resources>

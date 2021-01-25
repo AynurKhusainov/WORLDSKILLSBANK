@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="WSB">WorldSkills Bank</string>
+    <string name="branch">Отделения и банкоматы</string>
+    <string name="kurs">Курсы валют</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="enter">Войти</string>
+    <string name="avtorization">Авторизация</string>
+    <string name="AvtNote">Введите Ваш логин и пароль</string>
+    <string name="cancel">Отмена</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+
+
+
+    <string name="TitleAlert">Авторизация</string>
+    <string name="textAf">Введите Ваш логин и пароль</string>
+    <string name="hint_log">Логин</string>
+    <string name="hint_pas">Пароль</string>
+    <string name="add">Добавить</string>
 </resources>
