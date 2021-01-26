@@ -11,7 +11,7 @@
     <string name="cancel">Отмена</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
-
+    <string name="branch_list_title">Отделения и банкоматы</string>
 
 
     <string name="TitleAlert">Авторизация</string>

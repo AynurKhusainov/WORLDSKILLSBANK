@@ -42,6 +42,8 @@
 
         <ImageButton
             android:layout_width="match_parent"
+            android:clickable="true"
+            android:onClick="enterBranch"
             android:layout_height="100dp"
             android:background="@drawable/branch_d" />
 
