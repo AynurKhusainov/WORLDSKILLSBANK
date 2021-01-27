@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enterKurs(View view) {
-        Intent s = new Intent(MainActivity.this,KursActivity.class);
+        Intent s = new Intent(MainActivity.this,CourseActivity.class);
         startActivity(s);
     }
 }

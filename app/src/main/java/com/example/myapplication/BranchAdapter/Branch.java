@@ -1,14 +1,7 @@
-package com.example.myapplication.branchAdapter;
+package com.example.myapplication.BranchAdapter;
 
 public class Branch {
-    private String address;
-    private String bankomat;
-    private String working;
-    private String Wtime;
-
-    public Branch() {
-
-    }
+    String address, bankomat, working, Wtime;
 
     public Branch(String address, String bankomat, String working, String wtime) {
         this.address = address;
@@ -16,6 +9,7 @@ public class Branch {
         this.working = working;
         this.Wtime = wtime;
     }
+
 
     public String getAddress() {
         return address;
