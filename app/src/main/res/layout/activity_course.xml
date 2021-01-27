@@ -15,7 +15,7 @@
             android:id="@+id/name_branch"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:src="#777" />
+            android:src="#DBDBDC" />
 
         <TextView
             android:id="@+id/data_text"
@@ -46,9 +46,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="3dp"
             android:layout_below="@+id/name_branch"
-            android:background="#000" />
+            android:background="#A8A5A5" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView

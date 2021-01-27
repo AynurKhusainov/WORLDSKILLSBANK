@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -10,7 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.CourseAdapter.Course;
 import com.example.myapplication.CourseAdapter.CourseAdapter;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class CourseActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -24,6 +27,10 @@ public class CourseActivity extends AppCompatActivity {
     }
 
     public void init() {
+        TextView textDate= findViewById(R.id.data_text);
+        SimpleDateFormat format= new SimpleDateFormat("dd.MM.yyyy");
+        textDate.setText(format.format(new Date()));
+
         recyclerView = findViewById(R.id.courseRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
@@ -33,10 +40,11 @@ public class CourseActivity extends AppCompatActivity {
         recyclerView.setAdapter(courseAdapter);
     }
     private void setInitialData() {
-        arrayList.add(new Course("Москва, ул. Вавилова, д. 7", "Банкомат", "Работает", "часы работы"));
-        arrayList.add(new Course("Москва, ул. Вавилова, д. 52", "Отделение", "Работает", "часы работы"));
-        arrayList.add(new Course("Москва, ул. Ленина, д. 4", "Банкомат", "Работает", "часы работы"));
-        arrayList.add(new Course("Москва, ул. Ленина, д. 4", "Отделение", "Не работает", "часы работы"));
+        arrayList.add(new Course("USD", "Американский доллар", "64,95", "64,95"));
+        arrayList.add(new Course("USD", "Американский доллар", "64,95", "64,95"));
+        arrayList.add(new Course("USD", "Американский доллар", "64,95", "64,95"));
+        arrayList.add(new Course("USD", "Американский доллар", "64,95", "64,95"));
+        arrayList.add(new Course("USD", "Американский доллар", "64,95", "64,95"));
     }
 
 }

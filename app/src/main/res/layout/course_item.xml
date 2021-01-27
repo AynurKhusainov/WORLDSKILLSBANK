@@ -22,6 +22,7 @@
         android:layout_toEndOf="@+id/imgVal"
         android:textColor="#000"
         android:textSize="20dp"
+        android:text="aaaa"
         android:textStyle="bold" />
 
     <TextView
@@ -32,6 +33,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="18dp"
         android:layout_marginTop="-5dp"
+        android:text="aaaa"
         android:textColor="#2196F3" />
 
     <TextView
@@ -39,12 +41,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:text="64,95"
         android:textColor="#2196F3" />
 
     <ImageView
         android:id="@+id/arrowBuy"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:src="@drawable/up"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/tvBuy" />
 
@@ -53,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:text="64,95"
         android:layout_marginStart="60dp"
         android:layout_toEndOf="@+id/arrowBuy"
         android:textColor="#2196F3" />
@@ -61,6 +66,7 @@
         android:id="@+id/arrowSell"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:src="@drawable/down"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/tvSell" />
 

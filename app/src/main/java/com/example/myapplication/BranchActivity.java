@@ -29,8 +29,8 @@ public class BranchActivity extends AppCompatActivity {
 
     private void setInitialData() {
         branchActivityArrayList.add(new Branch("Москва, ул. Вавилова, д. 7", "Банкомат", "Работает", "часы работы"));
-        branchActivityArrayList.add(new Branch("Москва, ул. Вавилова, д. 52", "Отделение", "Работает", "часы работы"));
-        branchActivityArrayList.add(new Branch("Москва, ул. Ленина, д. 4", "Банкомат", "Работает", "часы работы"));
-        branchActivityArrayList.add(new Branch("Москва, ул. Ленина, д. 4", "Отделение", "Не работает", "часы работы"));
+        branchActivityArrayList.add(new Branch("Москва, ул. Вавилова, д. 7", "Банкомат", "Работает", "часы работы"));
+        branchActivityArrayList.add(new Branch("Москва, ул. Вавилова, д. 7", "Банкомат", "Работает", "часы работы"));
+        branchActivityArrayList.add(new Branch("Москва, ул. Вавилова, д. 7", "Банкомат", "Работает", "часы работы"));
     }
 }
