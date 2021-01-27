@@ -14,24 +14,23 @@ import com.example.myapplication.R;
 import java.util.List;
 
 public class branchAdapter extends RecyclerView.Adapter<branchAdapter.branchAdapterVH> {
-    private final LayoutInflater inflater;
-    private final List<Branch> brlists;
+    LayoutInflater layoutInflater;
+    List<Branch> branchList;
 
-    public branchAdapter(Context context, List<Branch> brlists) {
-        this.inflater = LayoutInflater.from(context);
-        this.brlists = brlists;
+    public branchAdapter(Context context, List<Branch> branchList) {
+        this.layoutInflater = layoutInflater.from(context);
+        this.branchList = branchList;
     }
 
     @NonNull
     @Override
     public branchAdapterVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.branch_item, parent, false);
-        return new branchAdapterVH(view);
+        return new branchAdapterVH(layoutInflater.inflate(R.layout.branch_item, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull branchAdapterVH holder, int position) {
-        Branch listBranch = brlists.get(position);
+    public void onBindViewHolder(@NonNull branchAdapter.branchAdapterVH holder, int position) {
+        Branch listBranch = branchList.get(position);
         holder.TextAddress.setText(listBranch.getAddress());
         holder.TextBankomat.setText(listBranch.getBankomat());
         holder.TextWorking.setText(listBranch.getWorking());
@@ -40,7 +39,7 @@ public class branchAdapter extends RecyclerView.Adapter<branchAdapter.branchAdap
 
     @Override
     public int getItemCount() {
-        return brlists.size();
+        return branchList.size();
     }
 
     public class branchAdapterVH extends RecyclerView.ViewHolder {

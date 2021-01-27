@@ -1,13 +1,13 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,5 +43,10 @@ public class MainActivity extends AppCompatActivity {
     public void enterBranch(View view) {
         Intent i = new Intent(MainActivity.this,BranchActivity.class);
         startActivity(i);
+    }
+
+    public void enterKurs(View view) {
+        Intent s = new Intent(MainActivity.this,KursActivity.class);
+        startActivity(s);
     }
 }

@@ -79,6 +79,8 @@
             android:id="@+id/KURSIB"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:clickable="true"
+            android:onClick="enterKurs"
             android:background="@drawable/branch_d" />
 
         <ImageView

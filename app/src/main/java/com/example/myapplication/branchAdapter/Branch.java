@@ -6,6 +6,10 @@ public class Branch {
     private String working;
     private String Wtime;
 
+    public Branch() {
+
+    }
+
     public Branch(String address, String bankomat, String working, String wtime) {
         this.address = address;
         this.bankomat = bankomat;
@@ -43,8 +47,5 @@ public class Branch {
 
     public void setWtime(String wtime) {
         Wtime = wtime;
-    }
-
-    public Branch() {
     }
 }
